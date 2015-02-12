@@ -1,0 +1,38 @@
+{
+  "name": "Amaretti",
+  "description": "Wrapper of mutiple encryption library to encrypt/decrypt messages with a passphrase, everywhere",
+  "version": "0.1.0",
+  "author": {
+    "name": "Vincent Cassé",
+    "url": "https://beveloper.fr"
+  },
+  "scripts": {
+    "start": "npm install && bower install && rm -rf public/*; brunch watch --server",
+    "test": "npm install && bower install && node_modules/.bin/karma start",
+    "clean": "rm -rf node_modules/; rm -rf bower_components/; rm -rf public/"
+  },
+  "main": "public/amaretti.js",
+  "licenses": [
+    {
+      "type": "MIT License",
+      "url": "http://opensource.org/licenses/mit-license.html"
+    }
+  ],
+  "readme": "README.md",
+  "devDependencies": {
+    "brunch": "^1.8.2",
+    "coffee-script": "^1.9.2",
+    "del": "^1.1.1",
+    "fb-flo-brunch": "^1.7.22",
+    "javascript-brunch": "1.7.1",
+    "jshint-brunch": "^1.8.0",
+    "karma": "~0.12.0",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-cli": "0.0.4",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "~0.2.0",
+    "karma-junit-reporter": "~0.2.0",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mock-promises": "^0.3.0"
+  }
+}
