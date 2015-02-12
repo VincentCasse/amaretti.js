@@ -1,0 +1,22 @@
+{
+  "name": "amaretti",
+  "description": "Wrapper of mutiple encryption library to encrypt/decrypt messages with a passphrase, everywhere",
+  "version": "0.1.0",
+  "author": {
+    "name": "Vincent Cassé",
+    "url": "https://beveloper.fr"
+  },
+  "main": [
+    "public/vendor.js",
+    "public/amaretti.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "sjcl": "^1.0.3",
+    "es6-promise": "^2.1.x"
+  }
+}
