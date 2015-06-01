@@ -46,7 +46,7 @@ module.exports = (config) -> config.set
   # - Opera
   # - Safari
   # - PhantomJS
-  browsers: ['Chrome', 'ChromeCanary', 'Firefox']
+  browsers: ['Firefox']
 
   # Auto run tests on start (when browsers are captured) and exit
   #singleRun: true

@@ -1,5 +1,5 @@
 {
-  "name": "Amaretti",
+  "name": "amaretti",
   "description": "Wrapper of mutiple encryption library to encrypt/decrypt messages with a passphrase, everywhere",
   "version": "0.1.0",
   "author": {
