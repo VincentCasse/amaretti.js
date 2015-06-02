@@ -1,5 +1,7 @@
 # Amaretti.js
 
+[![Build Status](https://travis-ci.org/VincentCasse/amaretti.js.svg)](https://travis-ci.org/VincentCasse/amaretti.js.svg)
+
 Amaretti.js is a library to encrypt and decrypt message into the browser. They use native implementation (WebCrypto APIs) when available, or SJCL library when not.
 
 ## Getting started
