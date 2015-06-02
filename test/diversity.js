@@ -55,12 +55,6 @@ describe('Diversity testing : try to create salt from lib and decrypt from nativ
 
 	describe('Use all sjcl', function() {
 
-		beforeEach(function () {
-			spyOn(amaretti, 'getCrypto').and.callFake(function() {
-				return undefined
-			});
-		});
-
 		it('should use crypto.subtle.importKey if available', function (done) {
 	
 			var m = 'Lorem ipsum dolor sit amet, consectetur adipiscing';
@@ -73,18 +67,18 @@ describe('Diversity testing : try to create salt from lib and decrypt from nativ
 
 			var salt, key, nonce, crypted;
 
-			amaretti.getSalt().then(function (generatedSalt) {
+			amarettiSjcl.getSalt().then(function (generatedSalt) {
 				salt = generatedSalt;
-				return amaretti.generateKey('oneunittest', salt, 'SHA-1');
+				return amarettiSjcl.generateKey('oneunittest', salt, 'SHA-1');
 			}).then(function (generatedKey) {
 				key = generatedKey;
-				return amaretti.getSalt();
+				return amarettiSjcl.getSalt();
 			}).then(function (generatedNonce) {
 				nonce = generatedNonce;
-				return amaretti.encrypt(key, m, nonce);
+				return amarettiSjcl.encrypt(key, m, nonce);
 			}).then(function (generateCrypted) {
 				crypted = generateCrypted;
-				return amaretti.decrypt(key, crypted, nonce);
+				return amarettiSjcl.decrypt(key, crypted, nonce);
 			}).then(function (decrypted) {
 				expect(decrypted).toEqual(m);
 				expect(salt).not.toBe(undefined);
@@ -100,12 +94,6 @@ describe('Diversity testing : try to create salt from lib and decrypt from nativ
 
 	describe('Generate a native salt and crypt with sjcl', function() {
 
-		beforeEach(function () {
-			spyOn(amaretti.getCrypto(), 'subtle').and.callFake(function() {
-				return undefined
-			});
-		});
-
 		it('should use crypto.subtle.importKey if available', function (done) {
 	
 			var m = 'Lorem ipsum dolor sit amet, consectetur adipiscing';
@@ -125,10 +113,10 @@ describe('Diversity testing : try to create salt from lib and decrypt from nativ
 				return amaretti.getSalt();
 			}).then(function (generatedNonce) {
 				nonce = generatedNonce;
-				return amaretti.encrypt(key, m, nonce);
+				return amarettiSjcl.encrypt(key, m, nonce);
 			}).then(function (generateCrypted) {
 				crypted = generateCrypted;
-				return amaretti.decrypt(key, crypted, nonce);
+				return amarettiSjcl.decrypt(key, crypted, nonce);
 			}).then(function (decrypted) {
 				expect(decrypted).toEqual(m);
 				expect(salt).not.toBe(undefined);
