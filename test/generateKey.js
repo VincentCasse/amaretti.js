@@ -13,7 +13,7 @@ describe('Generation key features', function () {
 		it ('should be configure iteration number', function () {
 			var iterations = 42;
 
-			amaretti = require('amaretti').init({
+			amaretti = Amaretti.init({
 				iterations: iterations,
 				enableNative: true
 			});
@@ -26,7 +26,7 @@ describe('Generation key features', function () {
 	var customIterations = 42;
 
 	beforeEach(function () {
-		amaretti = require('amaretti').init({
+		amaretti = Amaretti.init({
 			iterations: customIterations
 		});
 		sjcl.random.startCollectors();

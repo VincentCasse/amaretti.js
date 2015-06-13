@@ -6,9 +6,9 @@ describe('Diversity testing : try to create salt from lib and decrypt from nativ
 	var amarettiSjcl;
 
 	beforeEach(function () {
-		amaretti = require('amaretti').init();
+		amaretti = Amaretti.init();
 		sjcl.random.startCollectors();
-		amarettiSjcl = require('amaretti').init({
+		amarettiSjcl = Amaretti.init({
 			enableNative: false
 		});
 		sjcl.random.startCollectors();

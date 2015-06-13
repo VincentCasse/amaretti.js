@@ -37,6 +37,7 @@
     "karma-jasmine": "~0.2.0",
     "karma-junit-reporter": "~0.2.0",
     "karma-phantomjs-launcher": "^0.1.4",
+    "library-brunch": "^1.2.0",
     "mock-promises": "^0.3.0"
   }
 }

@@ -335,5 +335,3 @@ var Amaretti = {
 		}
 	}
 };
-
-module.exports = Amaretti;

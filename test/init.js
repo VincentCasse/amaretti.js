@@ -5,7 +5,7 @@ describe('Salt features', function () {
 	var amaretti;
 
 	beforeEach(function () {
-		amaretti = require('amaretti').init();
+		amaretti = Amaretti.init();
 	});
 
 	it('should be configured', function() {

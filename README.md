@@ -25,7 +25,7 @@ Just import the javascript file and require the library. Require system is inclu
 ```html
 <script src="public/vendor.js"></script>
 <script src="public/amaretti.js"></script>
-var Amaretti = require('amaretti').init();
+var Amaretti = Amaretti.init();
 ```
 
 ### Generate a salt

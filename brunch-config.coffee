@@ -1,12 +1,12 @@
 module.exports = config:
 	paths:
-		 watched:
+		watched:
 		 	['app']
 	files:
 		javascripts: 
 			joinTo: 
 				'vendor.js': /^bower_components/
-				'amaretti.js': /^app/
+				'amaretti.js': /^app/   
 	plugins:
     	jshint:
       		pattern: /^app\/.*\.js$/
@@ -28,3 +28,9 @@ module.exports = config:
         		TextEncoder: true
         		sjcl: true
       		warnOnly: true
+    
+    
+    modules:
+        wrapper: false
+        definition: false
+    

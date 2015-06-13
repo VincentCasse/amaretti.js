@@ -5,7 +5,7 @@ describe('encryption features', function () {
 	var amaretti;
 
 	beforeEach(function () {
-		amaretti = require('amaretti').init({
+		amaretti = Amaretti.init({
 			enableNative: true
 		});
 		sjcl.random.startCollectors();
