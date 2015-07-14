@@ -3,6 +3,10 @@ module.exports = (config) -> config.set
   basePath: ''
 
   frameworks: ['jasmine']
+  
+  preprocessors: {  
+    'test/**/*.js': ['coverage']
+  }
 
   # list of files / patterns to load in the browser
   files: [
@@ -17,7 +21,12 @@ module.exports = (config) -> config.set
 
   # use dots reporter, as travis terminal does not support escaping sequences
   # possible values: 'dots' || 'progress'
-  reporters: ['progress']
+  reporters: ['dots', 'coverage']
+
+  coverageReporter: {  
+    type: 'lcov',
+    dir: 'build/coverage/'
+  }
 
   # Where to save JUnit test results
   junitReporter:
@@ -51,3 +60,4 @@ module.exports = (config) -> config.set
   # Auto run tests on start (when browsers are captured) and exit
   #singleRun: true
   singleRun: false
+

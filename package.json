@@ -26,6 +26,7 @@
   "devDependencies": {
     "brunch": "^1.8.2",
     "coffee-script": "^1.9.2",
+    "coveralls": "^2.11.2",
     "del": "^1.1.1",
     "fb-flo-brunch": "^1.7.22",
     "javascript-brunch": "1.7.1",
@@ -33,6 +34,7 @@
     "karma": "~0.12.0",
     "karma-chrome-launcher": "~0.1.0",
     "karma-cli": "0.0.4",
+    "karma-coverage": "^0.4.2",
     "karma-firefox-launcher": "^0.1.6",
     "karma-jasmine": "~0.2.0",
     "karma-junit-reporter": "~0.2.0",
