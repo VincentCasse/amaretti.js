@@ -1,5 +1,7 @@
 # Amaretti.js
 
+[![Join the chat at https://gitter.im/VincentCasse/amaretti.js](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/VincentCasse/amaretti.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/VincentCasse/amaretti.js.svg)](https://travis-ci.org/VincentCasse/amaretti.js.svg)
 [![Coverage Status](https://coveralls.io/repos/VincentCasse/amaretti.js/badge.svg?branch=master&service=github)](https://coveralls.io/github/VincentCasse/amaretti.js?branch=master)
 
